@@ -11,7 +11,7 @@ const UserItem = ({user}) => {
     );
 };
 
-const UserList = ({user}) => {
+const UserList = ({users}) => {
     return (
         <table>
             <th>
