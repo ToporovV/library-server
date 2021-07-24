@@ -8,6 +8,9 @@ class Project(models.Model):
     repository_url = models.URLField(max_length=200, blank=True)
     users = models.ManyToManyField(User, related_name='projects')
 
+    def __str__(self):
+        return f'{self.name}'
+
 
 class ToDo(models.Model):
     DISABLED = 0
